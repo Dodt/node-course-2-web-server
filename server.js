@@ -52,9 +52,10 @@ app.get('/about',(req,res)=>{
     });
 });
 
-app.get('/portfolio',(req,res)=>{
-    res.render('project.hbs',{
-        portMessage: 'this is my portfolio'
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        projTitle:'Projects Page',
+        projMessage: 'project text page should go here'
     });
 });
 
