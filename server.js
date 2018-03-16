@@ -43,14 +43,19 @@ app.get('/',(req,res)=>{
     res.render('home.hbs',{
         pageTitle: 'Home Page',
         WelcomeMessage: 'Welcome to my website'
-    })
-
+    });
 });
 
 app.get('/about',(req,res)=>{
     res.render('about.hbs', {
         pageTitle: 'About Page'
-    })
+    });
+});
+
+app.get('/portifolio',(req,res)=>{
+    res.render('project.hbs',{
+        portMessage: 'this is my portifolio'
+    });
 });
 
 app.get('/bad',(req,res)=>{
